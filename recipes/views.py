@@ -3,9 +3,9 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'recipes/home.html', context={
+    return render(request, 'recipes/pages/home.html', context={
         'name': 'DEN'
-    })  # no caso acima render recebe 3 parametros. A request, o caminho e o CONTEXT que é um parametro que ele entrega para o HTML
+    })  # 3 parametros, context é passado ao html
 
 
 def sobre(request):
